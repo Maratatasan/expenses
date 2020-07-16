@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>expenses</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="title-box">
+          <div class="expense-title"><h3>expenses</h3></div>
+
+          <div class="title-row">
+            <!-- date -->
+            <div class="titles" id="title-date">
+              <label for="date-input">approximate date</label>
+              <br />
+              <input
+                type="text"
+                id="date-input"
+                placeholder="ie around 16th "
+              />
+            </div>
+            <!-- name -->
+            <div class="titles" id="tile-name">
+              <label for="name-input">name</label>
+              <br />
+              <input
+                id="name-input"
+                type="text"
+                placeholder="ie Netflix or T-mobile etc..."
+              />
+            </div>
+            <!-- weekly -->
+            <div class="titles" id="title-weekly">
+              <label for="weekly-expense-input" class="weekly-label"
+                >weekly</label
+              >
+              <br />
+              <input
+                type="number"
+                id="weekly-expense-input"
+                placeholder="type here if pay weekly"
+              />
+            </div>
+            <!-- monthly  -->
+            <div class="titles" id="title-monthly">
+              <label for="monthly-expense-input" class="monthly-label"
+                >monthly</label
+              >
+              <br />
+              <input
+                type="number"
+                id="monthly-expense-input"
+                placeholder="type here if pay monthly"
+              />
+            </div>
+
+            <!-- yearly  -->
+            <div class="titles" id="title-yearly">
+              <label for="yearly-expense-input" class="yearly-label"
+                >yearly</label
+              >
+              <br />
+              <input
+                type="number"
+                id="yearly-expense-input"
+                class=""
+                placeholder="type here if pay yearly"
+              />
+            </div>
+          </div>
+          <div class="submit-box"><button id="plus-button">+</button></div>
+        </div>
+      </form>
+
+      <!-- cost input display -->
+      <div class="expense-area"></div>
+
+      <!-- total expense -->
+      <div class="totals">
+        <div class="total-title"><h3>total expenses</h3></div>
+        <div class="weekly-total"></div>
+        <div class="monthly-total"></div>
+        <div class="yearly-total"></div>
+      </div>
+
+      <!-- income -->
+      <div class="income">
+        <div class="income-title"><h3>income</h3></div>
+        <div class="weekly-income">
+          <input class="weekly-income-input" type="number" />
+        </div>
+        <div class="monthly-income">
+          <input class="monthly-income-input" type="number" />
+        </div>
+        <div class="yearly-income">
+          <input class="yearly-income-input" type="number" />
+        </div>
+      </div>
+
+      <!-- food -->
+      <div class="food">
+        <div class="food-title"><h3>food?</h3></div>
+        <div class="weekly-food">
+          <input class="weekly-food-input" type="text" />
+        </div>
+        <div class="monthly-food">
+          <input class="monthly-food-input" type="text" />
+        </div>
+        <div class="yearly-food">
+          <input class="yearly-food-input" type="text" />
+        </div>
+      </div>
+
+      <!-- saving -->
+      <div class="saving">
+        <div class="saving-title"><h3>saving?</h3></div>
+        <div class="weekly-saving">
+          <input class="weekly-saving-input" type="text" />
+        </div>
+        <div class="monthly-saving">
+          <input class="monthly-saving-input" type="text" />
+        </div>
+        <div class="yearly-saving">
+          <input class="yearly-saving-input" type="text" />
+        </div>
+      </div>
+
+      <div class="spend">
+        <div class="spend-title"><h3>spend the rest if you like :D</h3></div>
+        <div class="weekly-spend"></div>
+        <div class="monthly-spend"></div>
+        <div class="yearly-spend"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
